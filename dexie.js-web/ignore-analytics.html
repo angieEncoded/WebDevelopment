@@ -1,0 +1,41 @@
+<html>
+  <body>
+    <label>Status</label>
+    <p id="status"></p>
+    <button id="btnToggle">Toggle</button>
+    <script>
+      const status = document.getElementById('status');
+      const btnToggle = document.getElementById('btnToggle');
+
+      function getCookies() {
+        return document.cookie
+          .split(';')
+          .map(part => part.trim())
+          .filter(part => part)
+          .map(cookie => cookie.split('='))
+          .map(([key, value]) => ({[key.trim()]: value.trim()}))
+          .reduce((p, c) => ({...p, ...c}));
+      }
+      
+      function updateStatus() {
+        const cookies = getCookies();
+        status.innerHTML = JSON.stringify(cookies);
+      }
+
+      updateStatus();
+
+      //const ignoreGA = cookies.ignoreGA;
+      btnToggle.onclick = ()=>{
+        if (getCookies().ignoreGA) {
+          document.cookie = "ignoreGA=; domain=dexie.org; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        } else {
+          let expiration_date = new Date();
+          expiration_date.setYear (expiration_date.getFullYear () + 1);
+          expiration_date = expiration_date.toGMTString();
+          document.cookie = "ignoreGA=1; expires=" + expiration_date + "; domain=dexie.org";
+        }
+        updateStatus();
+      }
+    </script>
+  </body>
+</html>

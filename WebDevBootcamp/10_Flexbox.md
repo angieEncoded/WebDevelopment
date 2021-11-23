@@ -1,0 +1,37 @@
+# Flexbox
+
+- What is Flexbox
+    - One-dimensional layout method for laying out items in rows and columns
+    - Newish addition to css
+    - included to address common layout frustrations
+    - how do we lay things out in a container?
+        - used to be a nightmare
+    - This allows us to scale elements to look nice no matter the size of the viewport
+    - why flex?
+        - allows us to distribute space dynamically across elements of an unknown size
+    - 'flexible' layouts
+- properties
+    - to activate flexbox we have to add ```display:flex``` to the parent container
+- The flex model
+    - main axis defaults left to right <------------>
+    - we use flex-direction to adjust how the content flows
+        - ```flex-direction: row;``` this is the default, left to right on the main axis
+        - ```flex-direction: row-reverse;``` this makes it go from right to left
+        - ```flex-direction: column;``` default, top to bottom
+            - This will also adjust the pieces to fit inside the container
+        - ```flex-direction: column-reverse;``` This makes it go from bottom to top
+- Justify content
+    - How the content is distributed across the main axis
+    - depends on flex-direction!
+        - ```justify-content: flex-start;``` flex-start is the default, content starts on the left
+        - ```justify-content: flex-end;``` flex-end will move it to the right
+        - ```justify-content:center;``` center will center it along the main axis
+        - ```justify-content:space-between;``` will put space between elements but not on the outer edge of the elements
+        - ```justify-content:space-around;``` gives each element the same amount of space around it
+        - ```justify-content:space-evenly;``` space the content evenly on the axis
+    - The direction of the main axis is what matters. Changing that can reverse everything
+- flex wrap
+    - Whether the elements will wrap along the main axis onto a new line
+    - ```flex-wrap: wrap;``` Will create a new column when the elements no longer fit along the cross axis
+    - ```flex-wrap: wrap-reverse;``` Will reverse the wrap along the cross axis
+- align-items

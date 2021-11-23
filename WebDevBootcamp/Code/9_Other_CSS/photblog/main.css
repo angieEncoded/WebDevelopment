@@ -1,0 +1,20 @@
+img {
+    width: 30%;
+    /* Doing the math ourselves used to be really common. */
+    /* margin:1.6666% */
+
+
+    /* center the contents - we have 10% left over and we can ask css to calculate the spacing for us */
+    margin: calc(10%/6);
+}
+
+nav {
+    font-family: Raleway;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    width: 30%;
+    border-bottom: 2px solid #f1f1f1;
+    margin-left:calc(10%/6);
+    /* top and bottom | left and right */
+    padding: 1.2em 0;
+}

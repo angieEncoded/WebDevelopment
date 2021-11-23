@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head')  %> 
+  <body>
+    <%- include('partials/nav')  %> 
+    <% if (number % 2 ===0){ %>
+      <p>The number is even!</p>
+    <% } else { %>
+      <p>The number is odd!</p>
+    <% } %> <%# Shorthand with ternary operator %>
+      <h3><%= number % 2 ===0 ? 'even' : 'odd' %></h3>
+    <%- include ('partials/footer.ejs') %> 

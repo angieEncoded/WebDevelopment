@@ -1,0 +1,38 @@
+/* by default h1s are blocks and will take up an entire line */
+h1 {
+  background-color: pink;
+  border: 1px solid black;
+  display: inline; /* force them inline */
+}
+
+/* By default spans are inline */
+/* span {
+  background-color: palegreen;
+  border: 1px solid black;
+  display: block;
+} */
+
+/* Elements with a display of inline ignore width and height */
+span {
+  background-color: orange;
+  border: 1px solid black;
+  width: 500px; /* This doesn't work! Inline elements ignore width and height*/
+  height: 500px;
+  padding: 100px; /* padding works but the surrounding content ignores it */
+  display: block; /* if we make it a block display, all the things we put in will be respected */
+}
+
+/* divs by default are block level elements */
+/* inline-block behaves like inline and puts all the boxes on the same line but height, width, margin and padding work */
+div {
+  height: 200px;
+  width: 200px;
+  background-color: olivedrab;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+/* hide an element with display:none */
+#hide {
+  display: none;
+}

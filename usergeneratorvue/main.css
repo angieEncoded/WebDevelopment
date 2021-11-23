@@ -1,0 +1,31 @@
+
+img {
+    border-radius: 50%;
+}
+.male{
+    border: 3px solid blue;
+    /* border-width: 1px; */
+}
+.male:hover{
+    border: 3px solid yellow;
+}
+
+
+.female{
+    /* background-color: darkviolet; */
+    /* border-color:darkviolet; */
+    border: 3px solid darkviolet;
+}
+
+.female:hover{
+    border: 3px solid black;
+}
+
+/* Get rid of bootstrap's outline */
+.btn-check:focus+.btn-secondary, .btn-secondary:focus{
+    outline: none !important;
+    color: #fff;
+    /* background-color: #010911;
+    border-color: #010911; */
+    box-shadow: none!important;
+}

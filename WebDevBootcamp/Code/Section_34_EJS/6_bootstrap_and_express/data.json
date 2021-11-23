@@ -1,0 +1,32 @@
+{
+  "cats": [
+    {
+      "name": "Rory",
+      "color": "silver",
+      "breed": "tabby",
+      "temperament": "relaxed",
+      "image": "pexels-photo-96938.jpeg"
+    },
+    {
+      "name": "Babs",
+      "color": "brown",
+      "breed": "tabby",
+      "temperment": "excited",
+      "image": "pexels-photo-209037.jpeg"
+    },
+    {
+      "name": "Calico",
+      "color": "calico",
+      "breed": "calico",
+      "temperment": "sleepy",
+      "image": "pexels-photo-248280.jpeg"
+    },
+    {
+      "name": "Yaya",
+      "color": "silver",
+      "breed": "tabby",
+      "temperment": "curious",
+      "image": "pexels-photo-326875.jpeg"
+    }
+  ]
+}

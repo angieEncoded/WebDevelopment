@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Race Registration</h1>
+    <section>
+        <form action="">
+            <div>
+                <label for="firstname">First Name</label>    
+                <input type="text" name="firstname" id="firstname" placeholder="First Name" required>
+                <label for="lastname">Last Name</label>    
+                <input type="text" name="lastname" id="lastname" placeholder="Last Name" required>
+            </div>
+
+            <p>Select a Race</p>
+            <div>
+                <input type="radio" name="race" value="funrun" id="funrun">
+                <label for="5k">Fun Run 5k</label>
+            </div>
+            <div>
+                <input type="radio" name="race" value="half" id="half">
+                <label for="half">Half Marathon</label>
+            </div>
+            <div>
+                <input type="radio" name="race" value="full" id="full">
+                <label for="full">Full Marathon</label>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email"  placeholder="Email Address" required>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password"  placeholder="Password" required>
+            </div>
+
+            <div>
+                <label for="age">Select Age Group</label>
+                <select name="age" id="age">
+                    <option value="kids">Under 18</option>
+                    <option value="adults">Between 18-64</option>
+                    <option value="seniors">65 and older</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="notes">Notes</label>
+                <textarea style="display:block" placeholder="Notes" rows="10" cols="20"></textarea>
+            </div>
+            <button>Register!</button>
+        </form>
+    </section>
+
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,60 @@
+/* css reset */
+body {
+  margin: 0;
+}
+
+/* Adjust the box height and width manually */
+div {
+  width: 200px;
+  height: 200px;
+  background-color: blueviolet;
+}
+
+/* border element */
+h1 {
+  background-color: red;
+}
+
+#one {
+  /* Border stuff */
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  box-sizing: border-box; /* will contain the border - without this the border overflows the box */
+  /* end border stuff */
+
+  background-color: blueviolet;
+}
+
+#two {
+  border-width: 2px;
+  border-color: green;
+  border-style: dashed groove none dotted; /* top right bottom left */
+  border-left-color: gold;
+  background-color: cadetblue;
+}
+
+#three {
+  margin: 30px;
+  border: 3px dotted black; /* shorthand property */
+  border-radius: 50%; /* This will make a circle */
+  overflow: hidden; /* hide the content within the circle */
+  background-color: chocolate;
+}
+
+/* padding - space between the border and the content*/
+#padding {
+  padding-left: 80px;
+  padding-top: 50px;
+}
+
+/* shorthand */
+#padme {
+  padding: 10px;
+}
+
+/* Margin space outside of an element's border */
+#four {
+  margin-left: 50px;
+  margin-top: 100px;
+}

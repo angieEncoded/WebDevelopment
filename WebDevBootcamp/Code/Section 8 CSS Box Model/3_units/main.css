@@ -1,0 +1,53 @@
+/* Percentages */
+
+#percentages {
+  background-color: orange;
+  width: 300px;
+  height: 300px;
+}
+
+#percentages div {
+  background-color: blue;
+  width: 50%;
+  height: 50%;
+}
+
+#percentages h1 {
+  font-size: 40px;
+  border: 1px solid black;
+  line-height: 50%; /* this is independant of the parent it uses the font-size */
+}
+
+/* ems */
+/* This is the parent element */
+article {
+  font-size: 30px;
+}
+
+/* this will be twice the size of the parent element */
+h2 {
+  font-size: 2em; /* This will be 60px */
+}
+
+/* padding and margin is often used with em - 1em will be equal to the font-size of the element itself */
+h3 {
+  font-size: 30px;
+  margin-left: 1em;
+}
+
+button {
+  font-size: 1em;
+  padding: 0 1em;
+  border-radius: 0.5em;
+  background-color: #2a9d8f;
+  color: white;
+}
+
+/* These are based on the root html element */
+#rems h2 {
+  font-size: 3rem;
+}
+
+#rems h3 {
+  font-size: 5rem;
+}

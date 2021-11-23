@@ -1,0 +1,48 @@
+/* Common text properties */
+h1 {
+  /* block elements stretch the whole screen */
+  text-align: center;
+  /* We can force it to only take up half the screen */
+  /* width: 50%; */
+
+  /* If a font doesn't support, it will pick the closest it DOES support */
+  font-weight: normal;
+
+  /* text-decoration is useful for removing hyperlink underlines - set to none */
+  text-decoration: green wavy underline overline 4px;
+
+  letter-spacing: 10px;
+  /* font-size basics with pixels */
+  /* 
+    - Most commonly used 'absolute' unit - always the same in the document no matter what
+    - does not necessarily equal 1 exact pixle
+    - not recommended for responsive websites
+    */
+  font-size: 80px;
+
+  /* font-family property
+    - This actually changes the font of an element
+    - depends on the fonts built into the browser
+    - import your own or use browser-safe fonts
+    - often a font stack will be used - use these fonts in order
+    */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  /* line-height controls the height 2 is double spacing, 0 is no spacing*/
+  line-height: 2;
+}
+
+/* code challenge
+h1{
+    text-transform:uppercase;
+    font-family:monospace;
+    text-align:center;
+    font-weight:100;
+    text-size:40px;
+    letter-spacing:20px;
+    text-decoration: plum wavy underline;
+}
+
+*/

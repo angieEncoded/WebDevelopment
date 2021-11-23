@@ -1,0 +1,48 @@
+<% layout('layouts/boilerplate') %>
+<div class="container mt-5">
+
+    <h1 class='text-center m-5'>Sign up here</h1>
+    <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+
+            <!-- <form action="/register" method="POST"  class="validateForm" novalidate> -->
+            <form action="/register" method="POST" novalidate>
+
+              <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" name="signup[username]" pattern="[a-zA-Z]{5,20}" required>
+              </div>
+
+                <!-- <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email Address</label>
+                  <input type="email" class="form-control" id="username" name="signup[username]" aria-describedby="emailHelp" required>
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div> -->
+                
+                <label for="pass2" class="form-label">Password</label>
+                <input type="password" id="pass1" class="form-control" aria-describedby="passwordHelpBlock" minLength="8" maxlength="20" name="signup[pass1]" required>
+                <div id="passwordHelpBlock" class="form-text">
+                  Your password must be 8-20 characters long and contain letters and numbers.
+                </div>
+                
+                <div class="mb-3">
+                  <label for="password" class="form-label">Repeat Password</label>
+                  <input type="password" class="form-control" id="pass2" name="signup[pass2]"  minLength="8" maxlength="20" onkeyup="checkPass(); return false;" required>
+                </div>
+                <p id="confirmMessage" class="confirmMessage"></p>
+
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        
+        
+        </div>
+        <div class="col-lg-4"></div>
+
+    </div>
+
+
+</div>
+
+<!-- <script src="/js/validateForm.js"></script> -->

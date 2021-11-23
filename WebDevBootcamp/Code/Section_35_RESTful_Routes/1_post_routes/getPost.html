@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>GET</h1>
+    <form action="http://localhost:8080/tacos" method="GET">
+        <ul>
+            <li>
+              <label for="meat">Meat:</label>
+              <input type="text" id="meat" name="meat">
+            </li>
+            <li>
+                <label for="number">Number:</label>
+                <input type="number"></input>
+            </li>
+            <li class="button">
+                <button type="submit">Submit</button>
+              </li>
+           </ul>
+    </form>
+
+
+    <h1>POST</h1>
+    <form action="http://localhost:8080/tacos" method="POST">
+        <ul>
+            <li>
+                <label for="meat">Meat:</label>
+                <input type="text" id="meat" name="meat">
+              </li>
+              <li>
+                  <label for="number">Number:</label>
+                  <input type="number" id='number' name="number"></input>
+              </li>
+            <li class="button">
+                <button type="submit">Submit</button>
+              </li>
+           </ul>
+    </form>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <title>Random User Generator</title>
+</head>
+<body>
+
+<!-- This is our 'virtual' dom -->
+  <div id="app">
+      <div class="container mt-5">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col text-center">
+
+                <!-- In order to pull data for the image we have to use v-bind: before some of these. The shorthand is just to use the colon before: -->
+                <!-- We can bind classes as well using the variables we set in Vue. We can match them up with our css classes -->
+                <img v-bind:src="picture" 
+                class="img-fluid" 
+                :class="gender" 
+                v-bind:alt="`${firstName} ${lastName}`">
+
+
+                <h1>{{firstName}} {{lastName}}</h1>
+                <h3>Email: {{email}}</h3>
+                <!-- We can pull data from the component to use as a class. It seems to allow it to work with bootstrap or rather, the regular class method -->
+                
+                <button 
+                v-on:click="getUser()" 
+                type="button" 
+                class="btn btn-secondary" 
+                :class="gender">Primary</button>
+            
+            
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+  </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/vue@3.0.5"></script>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>

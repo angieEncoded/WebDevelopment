@@ -1,0 +1,38 @@
+/* Semicolons are important. stylesheets may not apply at all if one is missing*/
+
+/* Selecting by element type */
+body {
+  /* This does more than just changing the color */
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(4, 4, 135, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+/* Basic properties - color will change foreground text and background-color will change the background */
+button {
+  color: red;
+  background-color: pink;
+}
+
+p {
+  color: white;
+  background-color: black;
+}
+
+/* RGB colors - additive color system mix red green and blue to make a color */
+/* 0-255 0 means none of that color and 255 means all of that color */
+h2 {
+  color: rgb(89, 151, 0);
+}
+
+/* hex colors are a different way to represent the colors but same principle */
+/* #ffff00 the first two represent red channel, next two the green channel and last two the blue channel*/
+/* they range from 0-F */
+/* shorthand exists - #000 is the same as #000000 as #c5e is the same as #cc55ee*/
+h1 {
+  color: #4745c7;
+}

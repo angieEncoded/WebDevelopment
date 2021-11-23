@@ -1,0 +1,49 @@
+div {
+    margin:10px;
+    border: 2px solid green;
+    /* float Not needed if using inline-block. needed for inline. */
+    /* float: left; */
+    display: inline-block;
+    background-color:black;
+    height: 100px;
+    width: 100px;
+}
+
+/* Nothing changes - top/bottom/left/right has no effect on elements statically positioned */
+#static .middle{
+    position: static;
+    background-color: blueviolet;
+}
+
+/* Relative keeps the element in the flow of the document, and we can use top/bottom/left/right to position it relative to itself */
+#relative .middle{
+    background-color: darkblue;
+    position: relative;
+    top: 50px;
+    left: 50px; /* offsets it from the left, so it moves right */
+}
+
+/* Absolute takes the element out of the document flow. does NOT create space */
+#absolute .middle{
+    background-color:darkkhaki;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+/* position the parent to prevent the element from setting itself relative to the body */
+#absolute {
+    position: relative;
+}
+
+
+/* will stick to the top */
+#fixed .middle{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+
+

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head.ejs') %> 
+  <body>
+    <%- include('partials/nav.ejs') %> 
+    <% for (let item of cats) { %>
+      <div class="card" style="width: 18rem">
+        <img src="/images/<%=item.image%>" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title"><%= item.name %></h5>
+          <p class="card-text">
+            <%= item.color %> <%= item.breed %> <%= item.temperament %>
+          </p>
+        </div>
+      </div>
+    <% } %>
+
+    <%- include ('partials/footer.ejs') %> 

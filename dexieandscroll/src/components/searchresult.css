@@ -1,0 +1,13 @@
+.result-line {
+    border-bottom: 1px solid black;
+    padding: 0px;
+}
+.result-line:hover{
+    cursor: pointer;
+    background-color: rgba(248, 241, 241, 0.767);
+}
+
+/* .result-line:first-child {
+    border-top: none;
+} */
+

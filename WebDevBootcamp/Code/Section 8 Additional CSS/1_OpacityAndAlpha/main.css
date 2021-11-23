@@ -1,0 +1,27 @@
+section {
+  width: 500px;
+  height: 500px;
+  background-color: magenta;
+}
+
+/* This will only affect the specific element and */
+#rgba {
+  width: 50%;
+  height: 50%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Opacity will affect everything, including child elements */
+#opacity {
+  width: 50%;
+  height: 50%;
+  background-color: red;
+  opacity: 0.5;
+}
+
+/* Alpha color channels exist for hex as well */
+#hexAlpha {
+  width: 50%;
+  height: 50%;
+  background-color: #00cca03f;
+}

@@ -1,0 +1,86 @@
+.search {
+    position: absolute; /* Use this to position it on the screen where you want */
+    z-index: 2000; /* Keep it on top of everything else */
+
+
+    background-color: rgb(204, 167, 253);
+    /* padding: 5px; */
+    border: 1px solid black;
+    width: 30rem;
+    left: 25%;
+    top: 25%;
+    border-radius: 5px;;
+    animation: fadeIn  ease-in-out .5s;
+    -webkit-animation: ease-in-out fadeIn .5s;
+    -moz-animation: ease-in-out fadeIn .5s;
+    -o-animation: ease-in-out fadeIn .5s;
+    -ms-animation: ease-in-out fadeIn .5s;
+
+}
+
+.search-header {
+    float:right;
+    z-index: 1080;
+}
+
+#closeme:hover {
+    cursor: pointer;
+}
+.window-top {
+  /* height: 30px; */
+  color:rgb(199, 199, 199);
+  width: 100%;
+  display: block;
+      background: radial-gradient(circle at 94.02% 88.03%, #5a119e, transparent 100%), radial-gradient(circle at 25.99% 27.79%, #3b0269, transparent 100%), radial-gradient(circle at 50% 50%, #000000, #000000 100%);
+
+  padding: 0px;
+  cursor:grabbing;
+}
+
+
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+
+  }
+
+
+
+  .results-wrapper {
+    width: 100%;
+    height: 300px;
+    padding: 3px;
+  }
+  .results-div {
+    border-radius: 3px;;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+   
+   
+    background-color: rgb(255, 255, 255);
+
+  }

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="display-1 text-center text-primary">The Grid System</h1>
+        <div class="row">
+            <div class="col-6 bg-success">6 Units</div>
+            <div class="col-6 bg-primary">6 Units</div>
+        </div>
+        <div class="row">
+            <div class="col-2 bg-success">6 Units</div>
+            <div class="col-8 bg-primary">6 Units</div>
+            <div class="col-2 bg-success">6 Units</div>
+        </div> 
+         <div class="row">
+             <div class="col bg-success">I am auto-sized</div>
+             <div class="col bg-primary">I am auto-sized</div>
+             <div class="col bg-danger">I am auto-sized</div>
+             <div class="col bg-info">I am auto-sized</div>
+             <div class="col bg-success">I am auto-sized</div>
+             <div class="col bg-success">I am auto-sized</div>
+         </div>  
+         <div class="row">
+            <div class="col bg-success">I am auto-sized</div>
+            <div class="col bg-primary">I am auto-sized</div>
+            <div class="col-8 bg-danger">I am auto-sized</div>
+        </div>  
+    </div>
+
+    <div class="container">
+        <h1 class="display-1 text-center text-primary">Responsive Grid</h1>
+        <div class="row">
+            <!-- The way we read this is at the breakpoint md and up, use up 6 units -->
+            <div class="bg-success col-md-6 col-xl-3">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, id minus nobis fugiat ipsam expedita, molestiae quod asperiores nihil sed dignissimos voluptatibus earum amet maiores sapiente praesentium tempore soluta odit!
+            </div>
+            <div class="bg-primary col-md-6 col-xl-3">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, repudiandae reiciendis, fugiat eos nostrum magnam dolores amet voluptatum commodi pariatur, ipsam corporis? Dolorem voluptatem ut quae eveniet sed ex quidem?
+            </div>            
+            <div class="bg-success col-md-6 col-xl-3">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, repudiandae reiciendis, fugiat eos nostrum magnam dolores amet voluptatum commodi pariatur, ipsam corporis? Dolorem voluptatem ut quae eveniet sed ex quidem?
+            </div>            
+            <div class="bg-primary col-md-6 col-xl-3">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, repudiandae reiciendis, fugiat eos nostrum magnam dolores amet voluptatum commodi pariatur, ipsam corporis? Dolorem voluptatem ut quae eveniet sed ex quidem?
+            </div>
+        </div>
+    </div>
+
+    <!-- Working with images -->
+    <div class="container">
+        <div class="row">
+            <!-- no-gutters will remove the space between pictures -->
+            <div class="col-xl-6 col-md-6 col-sm-12"><img src="images/alexander-london-mJaD10XeD7w-unsplash.jpg" class="img-fluid" alt=""></div>
+            <div class="col-xl-6 col-md-6 col-sm-12"><img src="images/cedric-vt-IuJc2qh2TcA-unsplash.jpg"  class="img-fluid" alt=""></div>
+            <div class="col-xl-6 col-md-6 col-sm-12"><img src="images/hang-niu-Tn8DLxwuDMA-unsplash.jpg"  class="img-fluid" alt=""></div>
+            <div class="col-xl-6 col-md-6 col-sm-12"><img src="images/jae-park-7GX5aICb5i4-unsplash.jpg"  class="img-fluid" alt=""></div>
+        </div>
+    </div>
+        
+    <!-- Helpful grid utilities -->
+    <div class="container">
+        <div class="row align-items-end"> <!-- This will align content at the bottom-->
+            <div class="col-lg-3 bg-danger">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio eius eum sapiente ipsum libero, ab, nesciunt nostrum odit illum non reprehenderit autem quis, architecto quasi deserunt iusto amet blanditiis aliquid.</div>
+            <div class="col-lg-3 bg-warning">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio eius eum sapiente ipsum libero, ab, nesciunt nostrum odit illum non reprehenderit autem quis, architecto quasi deserunt iusto amet blanditiis aliquid.</div>
+            <div class="col-lg-3 bg-success">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quos sint voluptate, officiis laborum nostrum eius tempora sed labore, veritatis saepe delectus maxime non fugiat velit et fuga quae? Impedit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio eius eum sapiente ipsum libero, ab, nesciunt nostrum odit illum non reprehenderit autem quis, architecto quasi deserunt iusto amet blanditiis aliquid.</div>
+            <div class="col-lg-3 bg-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio eius eum sapiente ipsum libero, ab, nesciunt nostrum odit illum non reprehenderit autem quis, architecto quasi deserunt iusto amet blanditiis aliquid.</div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="row align-items-start"> <!-- This will align content at the top-->
+            <div class="col-lg-3 bg-danger">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio eius eum sapiente ipsum libero, ab, nesciunt nostrum odit illum non reprehenderit autem quis, architecto quasi deserunt iusto amet blanditiis aliquid.</div>
+            <div class="col-lg-3 bg-warning">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio eius eum sapiente ipsum libero, ab, nesciunt nostrum odit illum non reprehenderit autem quis, architecto quasi deserunt iusto amet blanditiis aliquid.</div>
+            <div class="col-lg-3 bg-success">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quos sint voluptate, officiis laborum nostrum eius tempora sed labore, veritatis saepe delectus maxime non fugiat velit et fuga quae? Impedit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio eius eum sapiente ipsum libero, ab, nesciunt nostrum odit illum non reprehenderit autem quis, architecto quasi deserunt iusto amet blanditiis aliquid.</div>
+            <div class="col-lg-3 bg-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio eius eum sapiente ipsum libero, ab, nesciunt nostrum odit illum non reprehenderit autem quis, architecto quasi deserunt iusto amet blanditiis aliquid.</div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="row align-items-center"> <!-- This will align content at the center-->
+            <div class="col-lg-3 bg-danger">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio eius eum sapiente ipsum libero, ab, nesciunt nostrum odit illum non reprehenderit autem quis, architecto quasi deserunt iusto amet blanditiis aliquid.</div>
+            <div class="col-lg-3 bg-warning">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio eius eum sapiente ipsum libero, ab, nesciunt nostrum odit illum non reprehenderit autem quis, architecto quasi deserunt iusto amet blanditiis aliquid.</div>
+            <div class="col-lg-3 bg-success">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quos sint voluptate, officiis laborum nostrum eius tempora sed labore, veritatis saepe delectus maxime non fugiat velit et fuga quae? Impedit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio eius eum sapiente ipsum libero, ab, nesciunt nostrum odit illum non reprehenderit autem quis, architecto quasi deserunt iusto amet blanditiis aliquid.</div>
+            <div class="col-lg-3 bg-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio eius eum sapiente ipsum libero, ab, nesciunt nostrum odit illum non reprehenderit autem quis, architecto quasi deserunt iusto amet blanditiis aliquid.</div>
+        </div>
+    </div>            
+        
+    <hr>
+    <h3>Justify Content</h3>
+    <div class="row border justify-content-center">
+        <div class="col-4 bg-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, molestiae dolor temporibus debitis nam quaerat officiis consectetur illo eos consequuntur laborum suscipit itaque porro eveniet inventore nihil excepturi. Dolores, sed?</div>
+        <div class="col-4 bg-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, molestiae dolor temporibus debitis nam quaerat officiis consectetur illo eos consequuntur laborum suscipit itaque porro eveniet inventore nihil excepturi. Dolores, sed?</div>
+    </div>
+    <hr>
+    <div class="row border justify-content-between">
+        <div class="col-4 bg-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, molestiae dolor temporibus debitis nam quaerat officiis consectetur illo eos consequuntur laborum suscipit itaque porro eveniet inventore nihil excepturi. Dolores, sed?</div>
+        <div class="col-4 bg-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, molestiae dolor temporibus debitis nam quaerat officiis consectetur illo eos consequuntur laborum suscipit itaque porro eveniet inventore nihil excepturi. Dolores, sed?</div>
+    </div>
+    <div class="row border justify-content-end">
+        <div class="col-4 bg-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, molestiae dolor temporibus debitis nam quaerat officiis consectetur illo eos consequuntur laborum suscipit itaque porro eveniet inventore nihil excepturi. Dolores, sed?</div>
+        <div class="col-4 bg-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, molestiae dolor temporibus debitis nam quaerat officiis consectetur illo eos consequuntur laborum suscipit itaque porro eveniet inventore nihil excepturi. Dolores, sed?</div>
+    </div>
+    <hr>
+
+    <!-- We can make them move around based on breakpoints -->
+    <div class="row border justify-content-center justify-content-lg-start justify-content-xl-between">
+        <div class="col-4 bg-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, molestiae dolor temporibus debitis nam quaerat officiis consectetur illo eos consequuntur laborum suscipit itaque porro eveniet inventore nihil excepturi. Dolores, sed?</div>
+        <div class="col-4 bg-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, molestiae dolor temporibus debitis nam quaerat officiis consectetur illo eos consequuntur laborum suscipit itaque porro eveniet inventore nihil excepturi. Dolores, sed?</div>
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

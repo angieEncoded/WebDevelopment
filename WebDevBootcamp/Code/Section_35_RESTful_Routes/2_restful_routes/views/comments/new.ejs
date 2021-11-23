@@ -1,0 +1,28 @@
+
+<%- include('../partials/header.ejs') %> 
+
+<%- include('../partials/nav.ejs') %>
+
+<div class="container">
+    <form action="/comments" method="post"> 
+        <div class="row">
+            <h1>Form</h1>
+        </div>
+    <div class="row">
+        <div class="col-sm">
+            <label for="username">Username</label>
+            <input type="text" placeholder="Username" name="username" id=username></input>
+        </div>
+        <div class="col-sm">
+            <label for="comment">Comment</label>
+            <textarea  name="comment" id="comment" cols="30" rows="5" placeholder="Comment text"></textarea>
+        </div>
+      </div>
+      <button type="submit">Submit</button>
+
+    </form>
+</div>
+
+
+
+<%- include ('../partials/footer.ejs') %> 

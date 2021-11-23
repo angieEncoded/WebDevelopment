@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random</title>
+  </head>
+  <body>
+    <%# We *can* put javascript right in here but its better to keep the
+    template as dumb as possible %>
+    <h1>
+      <%= `Number without any variables passing through
+      ${Math.floor(Math.random() * 10) + 1}` %>
+    </h1>
+    <%# Instead, we would do the logic on the node server and pass the result to
+    the template in the form of a variable%>
+    <p><%= `The number coming from the variable is ${number}` %></p>
+
+    <%# This is how we can interpret just javascript - Dont put in an = or - %>
+    <% if (number % 2 ===0){ %>
+    <p>The number is even!</p>
+    <% } else { %>
+    <p>The number is odd!</p>
+    <% } %> <%# Shorthand with ternary operator %>
+    <h3><%= number % 2 ===0 ? 'even' : 'odd' %></h3>
+  </body>
+</html>

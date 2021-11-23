@@ -1,0 +1,18 @@
+
+<%- include('../partials/header.ejs') %> 
+
+<%- include('../partials/nav.ejs') %>
+<h1>
+    Comment id: <%= comment.id %>
+</h1>
+    <p><%= comment.username %></p>
+    <p><%= comment.comment %> </p>
+    <a href="/comments/<%= comment.id %>/edit" ><button>Edit comment</button></a>
+
+
+    <form action="/comments/<%= comment.id %>?_method=DELETE" method="POST">
+        <button>Delete Comment</button>
+    </form> 
+
+
+<%- include ('../partials/footer.ejs') %> 

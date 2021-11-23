@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form action="#">
+            <div class="form-row">
+                <!-- Anything below the md-6 breakpoint will take up the entire row -->
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" name="password">
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <!-- CITY STATE ZIP -->
+                <div class="form-group col-md-6">
+                    <label for="City">City</label>
+                    <input type="text" class="form-control">
+                </div>
+                <!-- This will be 6 across for everything except when it hits md breakpoint, then it switches to 3 -->
+                <div class="form-group col-6 col-md-3">
+                    <label for="state">State</label>
+                    <select name="state" id="state" class="form-control">
+                        <option value="NY">New York</option>
+                        <option value="California">California</option>
+                    </select>
+                </div>
+            
+                <div class="form-group col-6 col-md-3">
+                    <label for="zip">Zip Code</label>
+                    <input type="text" class="form-control">
+                </div>
+                <!-- CITY STATE ZIP -->
+                </div>
+                <div class="col">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">Default checkbox</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="tos">
+                        <label for="tos" class="custom-control-label">Sign Up</label>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "4_languageguesserchallenge",
+  "version": "1.0.0",
+  "description": "A language parser",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "akcoding",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "franc": "^5.0.0",
+    "langs": "^2.0.0",
+    "random-spanish-words": "^2.0.0",
+    "random-words": "^1.1.1"
+  }
+}

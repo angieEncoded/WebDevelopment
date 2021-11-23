@@ -1,0 +1,56 @@
+/* position:static - this is the default and what we have been working with */
+div {
+  width: 100px;
+  height: 100px;
+  background-color: #3d405b;
+  border: 2px solid black;
+  margin: 10px;
+  display: inline-block;
+}
+
+.middle {
+  background-color: #81b29a;
+}
+
+#static .middle {
+  background-color: #81b29a;
+}
+
+/* Relative positioning negative will either move the item up or left.*/
+#relative .middle {
+  position: relative;
+  top: 50px;
+  left: -100px;
+}
+
+/* Absolute removed the element from the normal document flow and no space is created for it */
+/* If this is inside an element that has a positioning set (other than static) it will position based on that element  */
+/* Otherwide it will position based on the closest next ancestor which goes all the way up to the body element */
+#absolute .middle {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+/* If we change the position here on this parent element to relative, the box comes back in to our element */
+#absolutecontained {
+  position: relative;
+}
+#absolutecontained .middle {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+/* Also removed from the document flow - and it will be sticky whereever you put it. Scroll with the lorem to see */
+#fixed .middle {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* Sticky - This will flow with the document until it hits the top and then it stays there as you scroll */
+
+#sticky .middle {
+  position: sticky;
+}

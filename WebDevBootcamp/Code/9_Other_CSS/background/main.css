@@ -1,0 +1,22 @@
+body {
+    background: url("images/photo-1419242902214-272b3f66ee7a.jpg") no-repeat center/40%,black;
+}
+
+section { 
+    width: 80%;
+    height:300px;
+    background-color: slategrey;
+    margin: auto;
+    background-image: url("images/photo-1419242902214-272b3f66ee7a.jpg");
+    /* background-size: contain; */
+    background-size: cover;
+    background-position: bottom;
+}
+
+
+
+h1 {
+    font-size: 100px;
+    color:white;
+}
+
